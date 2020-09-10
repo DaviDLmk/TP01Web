@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
-
 	<head>
 		<title> Formulaire </title>
 		<meta charset="UTF-8">
@@ -10,27 +8,49 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 
+	<nav class="navbar navbar-default navbar-fixed-top">
 	<body>
-	<h1> Formulaire </h1><br>
-	<h3>
-		<div><label> Nom : </label> <input type="text"></div>
-		<div><label> Prénom : </label> <input type="text"></div>
-		<div><label> Adresse : </label> <input type="text"></div>
-		<div><label> Code postal : </label> <input type="text"></div>
-		<div><label> Ville : </label> <input type="text"></div>
-		<div><label> Téléphone : </label> <input type="text" pattern="[0-9]{10}"></div>
-		<div><label> Email : </label> <input type="text"></div>
-		<div><label> Civilité : </label> <input type="radio" id="male" name="gender" value="male">
-			<label for="male">Homme</label>
-			<input type="radio" id="female" name="gender" value="female">
-			<label for="female">Femme</label>
-			<input type="radio" id="other" name="gender" value="female">
-			<label for="female">Autre</label>
-		<div><label> Login : </label> <input type="text"></div>
-		<div><label> Password : </label> <input type="text"></div>
-	</h3>
+		<form>
+		  <div class="form-row">
+			<div class="form-group col-md-6">
+			  <label for="inputNom">Nom</label>
+			  <input type="email" class="form-control" id="inputNom">
+			</div>
+			<div class="form-group col-md-6">
+			  <label for="inputPrenom">Prénom</label>
+			  <input type="password" class="form-control" id="inputPrenom">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputAdresse">Adresse</label>
+			<input type="text" class="form-control" id="inputAdresse" placeholder="8B rue du Val">
+		  </div>
+		  <div class="form-group">
+			<label for="inputVilleCP">Ville/CP </label>
+			<input type="text" class="form-control" id="inputVilleCP" placeholder="68100 Mulhouse">
+		
+		  <label for="inputTel">Téléphone</label>
+		  <input type="text" class="form-control" id="inputTel" pattern="[0-9]{10}>
+			<label for="inputEmail">Email</label>
+			<input type="text" class="form-control" id="inputAddresse" placeholder="exemple@mail.com">
+		  </div>
+		  <label for="inputState">Civilité</label>
+		  <select id="inputState" class="form-control">
+			<option selected>Choisissez...</option>
+			<option>Madame</option>
+			<option>Monsieur</option>
+		  </select>
+		  <div class="form-group">
+		  <label for="inputLogin">Téléphone</label>
+		  <input type="text" class="form-control" id="inputLogin" >
+			<label for="inputPassword">Password</label>
+			<input type="text" class="form-control" id="inputPassword" placeholder="exemple@mail.com">
+		  </div>
+		</div>
+		  <button type="submit" class="btn btn-primary">Sign in</button>
+		</form>
 	</body>
-
+	</nav>
 
 
 
