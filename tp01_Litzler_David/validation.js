@@ -1,16 +1,14 @@
-$('form').submit(function(evt) {
-  if (($('#inputPassword').val() === $('#inputConfirmPassword').val())) {
-    if($('#inputPassword').val() === "" && $('#inputConfirmPassword').val()=== ""){     
-      alert('Veuillez renseigner un mot de passe');
-    }
-    else{
-      alert('Les mots de passe correspondent');
-      evt.preventDefault();
-    }
-    
-  }
-  else{
-    alert('Les mots de passe ne correspondent pas');
-  }
-})
+$('form').submit(function(evt){
+	
+	if(($('#inputPassword').val() === $ ('inputConfPassword').val())){
+		if($('#inputPassword').val() !== "" && $('inputConfPassword').val()!== ""){
+			alert('Les mots de passe sont identiques');
+			evt.preventDefault();
+		}else {
+			alert('Veuillez remplir les champs de mot de passe');
+		}
+	}else {
+		alert('Les mots de passe ne sont pas identiques'):
+	}
+});
 	
