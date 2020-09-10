@@ -9,8 +9,8 @@
 	</head>
 
 	<nav class="navbar navbar-default navbar-fixed-top">
-	<body>
-		<form>
+	<body  id="page" >
+		<form name="form1">
 		  <div class="form-row">
 			<div class="form-group col-md-6">
 			  <label for="inputNom">Nom</label>
@@ -36,17 +36,19 @@
 			<label for="inputEmail">Email</label>
 			<input type="text" class="form-control" id="inputAddresse" placeholder="exemple@mail.com">
 		  </div>
-		  <label for="inputState">Civilité</label>
-		  <select id="inputState" class="form-control">
+		  <label for="inputCivilite">Civilité</label>
+		  <select id="inputCivilite" class="form-control">
 			<option selected>Choisissez...</option>
 			<option>Madame</option>
 			<option>Monsieur</option>
 		  </select>
 		  <div class="form-group">
-		  <label for="inputLogin">Téléphone</label>
+		  <label for="inputLogin">Login</label>
 		  <input type="text" class="form-control" id="inputLogin" >
 			<label for="inputPassword">Password</label>
-			<input type="text" class="form-control" id="inputPassword" placeholder="exemple@mail.com">
+			<input type="password" class="form-control" id="inputPassword">
+			<label for="inputConfPassword">Confirmation password</label>
+			<input type="password" class="form-control" id="inputConfPassword">
 		  </div>
 		</div>
 		  <button type="submit" class="btn btn-primary">Sign in</button>
@@ -55,5 +57,9 @@
 	</nav>
 
 <script
+  src="http://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="validation.js" type="text/javascript"></script>
 
 </html>
