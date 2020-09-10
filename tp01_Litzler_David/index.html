@@ -1,12 +1,35 @@
 <!DOCTYPE html>
+
 <html>
 
-<head>
-<title> Formulaire </title>
-</head>
 
+	<head>
+		<title> Formulaire </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
 
-
+	<body>
+	<h1> Formulaire </h1><br>
+	<h3>
+		<div><label> Nom : </label> <input type="text"></div>
+		<div><label> Prénom : </label> <input type="text"></div>
+		<div><label> Adresse : </label> <input type="text"></div>
+		<div><label> Code postal : </label> <input type="text"></div>
+		<div><label> Ville : </label> <input type="text"></div>
+		<div><label> Téléphone : </label> <input type="text" pattern="[0-9]{10}"></div>
+		<div><label> Email : </label> <input type="text"></div>
+		<div><label> Civilité : </label> <input type="radio" id="male" name="gender" value="male">
+			<label for="male">Homme</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Femme</label>
+			<input type="radio" id="other" name="gender" value="female">
+			<label for="female">Autre</label>
+		<div><label> Login : </label> <input type="text"></div>
+		<div><label> Password : </label> <input type="text"></div>
+	</h3>
+	</body>
 
 
 
